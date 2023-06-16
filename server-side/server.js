@@ -12,7 +12,7 @@ app.use(cors());
 
 mongoose
   .connect(process.env.MONGO_URL)
-  .then(() => console.log("DB IS RUNNING"))
+  .then(() => console.log("db is running"))
   .catch((err) => console.log(err));
 
 app.use("/api/", authRoute);
